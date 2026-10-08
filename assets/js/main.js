@@ -36,54 +36,6 @@ document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
   });
 });
 
-// News-card details normally appear on hover. On smaller touch layouts, make
-// the card itself reveal them on tap instead, while preserving link behavior.
-const mobileNewsCards = window.matchMedia("(max-width: 960px)");
-const newsCards = document.querySelectorAll(".home-hover-cards .feature-card");
-
-const toggleNewsCard = (card) => {
-  const willExpand = !card.classList.contains("is-expanded");
-
-  // Keep the visible details focused on one story at a time.
-  newsCards.forEach((otherCard) => {
-    otherCard.classList.remove("is-expanded");
-    const otherToggle = otherCard.querySelector(".mobile-news-card-toggle");
-    if (otherToggle) {
-      otherToggle.setAttribute("aria-expanded", "false");
-      otherToggle.setAttribute("aria-label", "Tampilkan detail berita");
-    }
-  });
-  card.classList.toggle("is-expanded", willExpand);
-
-  const toggle = card.querySelector(".mobile-news-card-toggle");
-  if (toggle) {
-    toggle.setAttribute("aria-expanded", String(willExpand));
-    toggle.setAttribute("aria-label", willExpand ? "Sembunyikan detail berita" : "Tampilkan detail berita");
-  }
-};
-
-document.querySelectorAll(".mobile-news-card-toggle").forEach((toggle) => {
-  // A native button provides a dependable full-card tap target on iPhone.
-  toggle.addEventListener("click", () => {
-    if (mobileNewsCards.matches) {
-      toggleNewsCard(toggle.closest(".feature-card"));
-    }
-  });
-});
-
-const clearExpandedNewsCards = ({ matches }) => {
-  if (!matches) {
-    newsCards.forEach((card) => card.classList.remove("is-expanded"));
-  }
-};
-
-// Older iPhones use the legacy MediaQueryList listener API.
-if (mobileNewsCards.addEventListener) {
-  mobileNewsCards.addEventListener("change", clearExpandedNewsCards);
-} else {
-  mobileNewsCards.addListener(clearExpandedNewsCards);
-}
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
