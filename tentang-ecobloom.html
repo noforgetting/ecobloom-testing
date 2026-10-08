@@ -2,9 +2,10 @@
 <html lang="id">
 
 <head>
+  <link rel="icon" type="image/png" href="ecobloom.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang EcoBloom | Eco Bloom</title>
+  <title>Siapa Kami? | EcoBloom</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -13,23 +14,23 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="scrolling-nav-page">
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation"><a class="brand" href="index.html"><img class="brand-mark"
-          src="ecobloom.png">Eco Bloom</a><button class="hamburger" type="button"
+          src="ecobloom.png">EcoBloom</a><button class="hamburger" type="button"
         aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav-menu">
         <li><a class="nav-link" href="index.html">Beranda</a></li>
         <li class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Tentang Kami <span
               class="arrow" aria-hidden="true"></span></button>
           <div class="dropdown-menu">
-            <div class="dropdown-menu-inner"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a><a href="faq.html">FAQ</a></div>
+            <div class="dropdown-menu-inner"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a></div>
           </div>
         </li>
         <li class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Kegiatan<span
               class="arrow" aria-hidden="true"></span></button>
           <div class="dropdown-menu">
-            <div class="dropdown-menu-inner"><a href="list-program.html">Program</a><a href="list-proyek.html">Proyek</a>
+            <div class="dropdown-menu-inner"><a href="list-program.html">Program</a>
             </div>
           </div>
         </li>
@@ -40,11 +41,12 @@
           </div>
         </li>
         <li><a class="nav-link" href="kontak.html">Hubungi Kami</a></li>
+        <li class="nav-join"><a class="nav-join-button" href="pendaftaran.html">Bergabung</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="hero" style="background-image: linear-gradient(rgba(16, 25, 15, 0.25), rgba(16, 25, 15, 0.58)), url('assets/images/Hero-index-html.jpeg');">
+    <section class="hero about-hero">
       <div class="hero-inner">
         <div class="hero-copy reveal">
           <h1 class="leaf-period">Blooming a <br> sustainable future <img src="assets/images/leaf-vector-3.svg"></h1>
@@ -86,12 +88,12 @@
             <h3 class="mission-vision-card-header">Misi</h3>
             <article class="mission-vision-card">
               <span class="mission-vision-number">02</span>
-              <ul>
-                <li  style="text-align: left;">Meningkatkan literasi lingkungan melalui program edukasi yang sistematis dan berbasis riset. </li>
-                <li  style="text-align: left;">Mengembangkan kepemimpinan lingkungan (environmental leadership) di kalangan pemuda.</li>
-                <li  style="text-align: left;">Mendorong aksi nyata dan proyek berkelanjutan di komunitas lokal.</li>
-                <li  style="text-align: left;">Membangun kolaborasi dengan warga setempat, sekolah, universitas, organisasi, dan instansi pemerintah.</li>
-                <li  style="text-align: left;">Mengintegrasikan nilai keberlanjutan dalam gaya hidup generasi muda.</li>
+              <ul class="mission-list">
+                <li>Meningkatkan literasi lingkungan melalui program edukasi yang sistematis dan berbasis riset. </li>
+                <li>Mengembangkan kepemimpinan lingkungan (environmental leadership) di kalangan pemuda.</li>
+                <li>Mendorong aksi nyata berkelanjutan di komunitas lokal.</li>
+                <li>Membangun kolaborasi dengan warga setempat, sekolah, universitas, organisasi, dan instansi pemerintah.</li>
+                <li>Mengintegrasikan nilai keberlanjutan dalam gaya hidup generasi muda.</li>
               </ul>
             </article>
           </div>
@@ -113,7 +115,7 @@
           <article class="annual-target-item reveal">
             <p>Mengedukasi</p>
             <strong>500+</strong>
-            <p>murid kelas 4–6 mengenai ilmu keberlanjutan</p>
+            <p>murid kelas 4-6 mengenai ilmu keberlanjutan</p>
           </article>
           <article class="annual-target-item reveal">
             <p>Berhasil menjalin kemitraan dengan</p>
@@ -133,11 +135,11 @@
           <p class="lead">Setiap divisi memiliki peran masing-masing dan bekerja secara sinergis dalam menjalankan program serta mencapai tujuan organisasi.</p>
         </div>
         <div class="division-grid">
-          <article class="division-card reveal"><h3>Event & Logistik</h3><p>Temp. description</p></article>
-          <article class="division-card reveal"><h3>Media</h3><p>Temp. description</p></article>
-          <article class="division-card reveal"><h3>Substansi</h3><p>Temp. description</p></article>
-          <article class="division-card reveal"><h3>Finance</h3><p>Temp. description</p></article>
-          <article class="division-card reveal"><h3>Technology</h3><p>Temp. description</p></article>
+          <article class="division-card reveal"><h3>Event & Logistik</h3><p>Bertanggung jawab atas seluruh kebutuhan teknis dan operasional kegiatan, mulai dari penyusunan jadwal hingga pengelolaan perlengkapan dan venue. Divisi ini memastikan setiap program berjalan lancar, terstruktur, dan sesuai rencana.</p></article>
+          <article class="division-card reveal"><h3>Konten & Media</h3><p>Bertanggung jawab membangun citra publik dan branding EcoBloom melalui pengelolaan media sosial, pembuatan konten, serta dokumentasi kegiatan. Divisi ini mengubah hasil riset menjadi konten yang menarik dan memastikan seluruh publikasi berjalan konsisten dan profesional.</p></article>
+          <article class="division-card reveal"><h3>Substansi</h3><p>Bertanggung jawab menjaga kualitas materi, kurikulum, dan akurasi akademik seluruh program EcoBloom. Divisi ini melakukan riset, mengembangkan materi edukasi, mengajar, serta mengevaluasi program agar berdampak dan berbasis data.</p></article>
+          <article class="division-card reveal"><h3>Keuangan & Kemitraan</h3><p>Bertanggung jawab mengelola keuangan organisasi, menyusun anggaran, mencari pendanaan, serta membangun kerja sama dengan pihak eksternal. Divisi ini memastikan keberlanjutan finansial melalui sponsorship, kemitraan, dan pengelolaan dana yang transparan.</p></article>
+          <article class="division-card reveal"><h3>Technology & Website Develpment</h3><p>Bertanggung jawab mengembangkan dan mengelola website, sistem digital, serta kebutuhan teknologi organisasi. Divisi ini memastikan seluruh platform digital berjalan aman, efisien, dan mendukung operasional serta inovasi EcoBloom.</p></article>
         </div>
       </div>
     </section>
@@ -148,23 +150,24 @@
           <h2>Prinsip Kami</h2>
           <p class="lead">Kami menjadikan prinsip-prinsip ini sebagai dasar dalam setiap program, kolaborasi, dan aksi nyata.</p>
         </div>
-        <div class="principle-grid">
-          <article class="principle-card reveal"><h3>Integritas Akademik &amp; Riset</h3><p>Setiap program edukasi dan informasi didasarkan pada data, fakta, dan sumber ilmiah yang akurat.</p></article>
-          <article class="principle-card reveal"><h3>Transparansi</h3><p>Menjaga keterbukaan dalam perencanaan dan pelaksanaan program serta komunikasi dengan pihak berkepentingan.</p></article>
-          <article class="principle-card reveal"><h3>Keberlanjutan yang Inklusif</h3><p>Mengembangkan solusi yang dapat diakses dan diterapkan berbagai lapisan masyarakat, termasuk komunitas pedesaan.</p></article>
-          <article class="principle-card reveal"><h3>Kolaborasi Proaktif</h3><p>Mengutamakan kerja sama terbuka dan sinergis untuk menciptakan dampak yang lebih luas.</p></article>
-          <article class="principle-card reveal"><h3>Inovasi Berbasis Solusi</h3><p>Mengembangkan ide, produk, dan aksi praktis yang berorientasi pada penyelesaian masalah lingkungan secara nyata.</p></article>
-          <article class="principle-card reveal"><h3>Pemberdayaan Pemuda</h3><p>Menempatkan pemuda sebagai perancang, pelaksana, dan pengembang solusi lingkungan.</p></article>
+        <div class="accordion principle-accordion reveal">
+          <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="principle-1">Integritas Akademik &amp; Riset <span class="accordion-icon" aria-hidden="true"></span></button><div class="accordion-panel" id="principle-1"><div><p>Setiap program edukasi dan informasi didasarkan pada data, fakta, dan sumber ilmiah yang akurat.</p></div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="principle-2">Transparansi <span class="accordion-icon" aria-hidden="true"></span></button><div class="accordion-panel" id="principle-2"><div><p>Menjaga keterbukaan dalam perencanaan dan pelaksanaan program serta komunikasi dengan pihak berkepentingan.</p></div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="principle-3">Keberlanjutan yang Inklusif <span class="accordion-icon" aria-hidden="true"></span></button><div class="accordion-panel" id="principle-3"><div><p>Mengembangkan solusi yang dapat diakses dan diterapkan berbagai lapisan masyarakat, termasuk komunitas pedesaan.</p></div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="principle-4">Kolaborasi Proaktif <span class="accordion-icon" aria-hidden="true"></span></button><div class="accordion-panel" id="principle-4"><div><p>Mengutamakan kerja sama terbuka dan sinergis untuk menciptakan dampak yang lebih luas.</p></div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="principle-5">Inovasi Berbasis Solusi <span class="accordion-icon" aria-hidden="true"></span></button><div class="accordion-panel" id="principle-5"><div><p>Mengembangkan ide, produk, dan aksi praktis yang berorientasi pada penyelesaian masalah lingkungan secara nyata.</p></div></div></div>
+          <div class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="principle-6">Pemberdayaan Pemuda <span class="accordion-icon" aria-hidden="true"></span></button><div class="accordion-panel" id="principle-6"><div><p>Menempatkan pemuda sebagai perancang, pelaksana, dan pengembang solusi lingkungan.</p></div></div></div>
         </div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="footer-grid">
-      <div><h2>Eco Bloom</h2><p>Placeholder Description</p></div>
-      <div><h3>Tentang Kami</h3><div class="footer-links"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a><a href="faq.html">FAQ</a></div></div>
-      <div><h3>Kegiatan</h3><div class="footer-links"><a href="list-program.html">Program</a><a href="list-proyek.html">Proyek</a></div></div>
-      <div><h3>Hubungi Kami</h3><div class="footer-links"><a href="https://www.instagram.com/ecobloom.ig/">Instagram</a></div></div>
+      <div><h2>EcoBloom</h2><p>Blooming a <strong class="footer-tagline-accent">sustainable future</strong>.</p></div>
+      <div><h3>Tentang Kami</h3><div class="footer-links"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a></div></div>
+      <div><h3>Kegiatan</h3><div class="footer-links"><a href="list-program.html">Program</a></div></div>
+      <div><h3>Berita</h3><div class="footer-links"><a href="berita.html">Berita</a><a href="galeri.html">Galeri</a></div></div>
+      <div><h3>Hubungi Kami</h3><div class="footer-links"><a href="kontak.html">Kontak</a></div></div><div><h3>Media Sosial</h3><div class="footer-links"><a class="footer-instagram" href="https://www.instagram.com/ecobloom.ig/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2Z"/></svg></a></div></div>
     </div>
   </footer>
   <script src="assets/js/main.js"></script>

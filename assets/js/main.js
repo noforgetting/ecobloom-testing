@@ -2,6 +2,16 @@ const body = document.body;
 const menuButton = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+const homeHeader = document.querySelector(".home-page.home-redesign .site-header, .scrolling-nav-page .site-header");
+
+if (homeHeader) {
+  const updateHomeHeader = () => {
+    homeHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+  };
+
+  updateHomeHeader();
+  window.addEventListener("scroll", updateHomeHeader, { passive: true });
+}
 
 if (menuButton && navMenu) {
   menuButton.addEventListener("click", () => {
@@ -26,6 +36,54 @@ document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
   });
 });
 
+// News-card details normally appear on hover. On smaller touch layouts, make
+// the card itself reveal them on tap instead, while preserving link behavior.
+const mobileNewsCards = window.matchMedia("(max-width: 960px)");
+const newsCards = document.querySelectorAll(".home-hover-cards .feature-card");
+
+const toggleNewsCard = (card) => {
+  const willExpand = !card.classList.contains("is-expanded");
+
+  // Keep the visible details focused on one story at a time.
+  newsCards.forEach((otherCard) => {
+    otherCard.classList.remove("is-expanded");
+    const otherToggle = otherCard.querySelector(".mobile-news-card-toggle");
+    if (otherToggle) {
+      otherToggle.setAttribute("aria-expanded", "false");
+      otherToggle.setAttribute("aria-label", "Tampilkan detail berita");
+    }
+  });
+  card.classList.toggle("is-expanded", willExpand);
+
+  const toggle = card.querySelector(".mobile-news-card-toggle");
+  if (toggle) {
+    toggle.setAttribute("aria-expanded", String(willExpand));
+    toggle.setAttribute("aria-label", willExpand ? "Sembunyikan detail berita" : "Tampilkan detail berita");
+  }
+};
+
+document.querySelectorAll(".mobile-news-card-toggle").forEach((toggle) => {
+  // A native button provides a dependable full-card tap target on iPhone.
+  toggle.addEventListener("click", () => {
+    if (mobileNewsCards.matches) {
+      toggleNewsCard(toggle.closest(".feature-card"));
+    }
+  });
+});
+
+const clearExpandedNewsCards = ({ matches }) => {
+  if (!matches) {
+    newsCards.forEach((card) => card.classList.remove("is-expanded"));
+  }
+};
+
+// Older iPhones use the legacy MediaQueryList listener API.
+if (mobileNewsCards.addEventListener) {
+  mobileNewsCards.addEventListener("change", clearExpandedNewsCards);
+} else {
+  mobileNewsCards.addListener(clearExpandedNewsCards);
+}
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -44,18 +102,34 @@ document.querySelectorAll(".reveal, .image-reveal, .page-hero-image, .impact-her
 
 const heroCarousel = document.querySelector(".hero-carousel");
 
+// Longer testimonials stay comfortably inside the fixed carousel card while
+// short quotes retain the more expressive display size.
+document.querySelectorAll(".testimonial-card blockquote").forEach((quote) => {
+  const quoteLength = quote.textContent.trim().length;
+  quote.classList.toggle("is-long", quoteLength > 180 && quoteLength <= 280);
+  quote.classList.toggle("is-extra-long", quoteLength > 280);
+});
+
 if (heroCarousel) {
   const slides = Array.from(heroCarousel.querySelectorAll(".hero-slide"));
   const dots = Array.from(heroCarousel.querySelectorAll(".hero-carousel-dot"));
+  const panels = Array.from(heroCarousel.querySelectorAll(".testimonial-panel"));
   const previousButton = heroCarousel.querySelector(".hero-carousel-previous");
   const nextButton = heroCarousel.querySelector(".hero-carousel-next");
   let activeSlide = 0;
 
+  heroCarousel.classList.add("has-first-testimonial");
+
   const showSlide = (index) => {
     activeSlide = (index + slides.length) % slides.length;
+    heroCarousel.classList.toggle("has-first-testimonial", activeSlide === 0);
 
     slides.forEach((slide, slideIndex) => {
       slide.classList.toggle("is-active", slideIndex === activeSlide);
+    });
+
+    panels.forEach((panel, panelIndex) => {
+      panel.classList.toggle("is-active", panelIndex === activeSlide);
     });
 
     dots.forEach((dot, dotIndex) => {

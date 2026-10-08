@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" type="image/png" href="ecobloom.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our People | Eco Bloom</title>
+  <title>Tim Kami | EcoBloom</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -13,23 +14,23 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="scrolling-nav-page">
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation"><a class="brand" href="index.html"><img class="brand-mark"
-          src="ecobloom.png">Eco Bloom</a><button class="hamburger" type="button"
+          src="ecobloom.png">EcoBloom</a><button class="hamburger" type="button"
         aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav-menu">
         <li><a class="nav-link" href="index.html">Beranda</a></li>
         <li class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Tentang Kami <span
               class="arrow" aria-hidden="true"></span></button>
           <div class="dropdown-menu">
-            <div class="dropdown-menu-inner"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a><a href="faq.html">FAQ</a></div>
+            <div class="dropdown-menu-inner"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a></div>
           </div>
         </li>
         <li class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Kegiatan<span
               class="arrow" aria-hidden="true"></span></button>
           <div class="dropdown-menu">
-            <div class="dropdown-menu-inner"><a href="list-program.html">Program</a><a href="list-proyek.html">Proyek</a>
+            <div class="dropdown-menu-inner"><a href="list-program.html">Program</a>
             </div>
           </div>
         </li>
@@ -40,16 +41,19 @@
           </div>
         </li>
         <li><a class="nav-link" href="kontak.html">Hubungi Kami</a></li>
+        <li class="nav-join"><a class="nav-join-button" href="pendaftaran.html">Bergabung</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="hero"
-      style="background-image: linear-gradient(rgba(16, 25, 15, 0.25), rgba(16, 25, 15, 0.58)), url('assets/images/PictureTeamEcoBloom.jpg'), url('assets/images/PictureTeamEcoBloom.jpg'); background-size: cover, contain, cover; background-position: center, center, center; background-repeat: no-repeat;">
+    <section class="hero team-hero">
       <div class="hero-inner">
         <div class="hero-copy reveal">
-          <h1 class="leaf-period">Tim EcoBloom</h1>
-          <p class="lead">Kenali anggota tim yang menjadi bagian dari EcoBloom!</p>
+          <p class="lead">Kami adalah para pelajar yang bertumbuh bersama, mengubah kepedulian terhadap lingkungan menjadi langkah nyata untuk masa depan yang lebih berkelanjutan.</p>
+          <div class="team-hero-cta">
+            <p>Ingin menjadi bagian dari tim kami?</p>
+            <a class="button button-light" href="pendaftaran.html">Bergabung Sekarang</a>
+          </div>
         </div>
       </div>
     </section>
@@ -60,19 +64,19 @@
       <br>
       <div class="container team-grid">
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/kayson.png"></div>
+          <div class="team-photo"><img src="assets/images/people/kayson-optimized.jpg"></div>
           <h3>Kayson Reinard Budiardy</h3>
-          <p class="team-title">Ketua Umum & Co-Founder</p>
+          <p class="team-title">Ketua Umum & Founder EcoBloom</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/darren.png"></div>
+          <div class="team-photo"><img src="assets/images/people/darren-optimized.jpg"></div>
           <h3>Darren Manuel Brasali</h3>
-          <p class="team-title">Wakil Ketua Umum & Co-Founder</p>
+          <p class="team-title">Wakil Ketua Umum & Founder EcoBloom</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/naomi.png"></div>
+          <div class="team-photo"><img src="assets/images/people/naomi-optimized.jpg"></div>
           <h3>Naomi Indira Haryadi</h3>
           <p class="team-title">Sekretaris</p>
           <p></p>
@@ -85,13 +89,13 @@
       <br>
       <div class="container team-grid">
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/ethan.png"></div>
+          <div class="team-photo"><img src="assets/images/people/ethan-optimized.jpg"></div>
           <h3>Ethan Roderick Wijaya</h3>
-          <p class="team-title">Ketua</p>
+          <p class="team-title">Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/nickrich.png"></div>
+          <div class="team-photo"><img src="assets/images/people/nickrich-optimized.jpg"></div>
           <h3>Nicholas Richard Lidrapraja</h3>
           <p class="team-title">Anggota</p>
           <p></p>
@@ -104,50 +108,38 @@
       <br>
       <div class="container team-grid">
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/emelie.png"></div>
+          <div class="team-photo"><img src="assets/images/people/emelie-optimized.jpg"></div>
           <h3>Emelie Rose</h3>
-          <p class="team-title">Ketua</p>
+          <p class="team-title">Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/jill.png"></div>
+          <div class="team-photo"><img src="assets/images/people/jill-optimized.jpg"></div>
           <h3>Jillian Shion</h3>
-          <p class="team-title">Wakil Ketua</p>
+          <p class="team-title">Wakil Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/bryan.png"></div>
+          <div class="team-photo"><img src="assets/images/people/bryan-optimized.jpg"></div>
           <h3>Bryan Christopher Shu</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/steve.png"></div>
+          <div class="team-photo"><img src="assets/images/people/steve-optimized.jpg"></div>
           <h3>Steve Frederick Lokanata</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/hubert.png"></div>
+          <div class="team-photo"><img src="assets/images/people/hubert-optimized.jpg"></div>
           <h3>Hubert Daniel Permana</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/caroline.png"></div>
+          <div class="team-photo"><img src="assets/images/people/caroline-optimized.jpg"></div>
           <h3>Caroline Sie</h3>
-          <p class="team-title">Anggota</p>
-          <p></p>
-        </article>
-        <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/sevo.png"></div>
-          <h3>Sevores Abbe</h3>
-          <p class="team-title">Anggota</p>
-          <p></p>
-        </article>
-        <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/reine.png"></div>
-          <h3>Reine Belle Alexandrea</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
@@ -159,49 +151,49 @@
       <br>
       <div class="container team-grid">
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/abigail.png"></div>
+          <div class="team-photo"><img src="assets/images/people/abigail-optimized.jpg"></div>
           <h3>Abigail Permata Simon</h3>
-          <p class="team-title">Ketua</p>
+          <p class="team-title">Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/jocelyn.png"></div>
+          <div class="team-photo"><img src="assets/images/people/jocelyn-optimized.jpg"></div>
           <h3>Jocelyn Patricia</h3>
-          <p class="team-title">Wakil Ketua</p>
+          <p class="team-title">Wakil Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/michelle.png"></div>
+          <div class="team-photo"><img src="assets/images/people/michelle-optimized.jpg"></div>
           <h3>Michelle Artmaritia Bunardi</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/karen.png"></div>
+          <div class="team-photo"><img src="assets/images/people/karen-optimized.jpg"></div>
           <h3>Karen Christhio</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/aileen.png"></div>
+          <div class="team-photo"><img src="assets/images/people/aileen-optimized.jpg"></div>
           <h3>Aileen Nathania Brasali</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/lakeisha.png"></div>
+          <div class="team-photo"><img src="assets/images/people/lakeisha-optimized.jpg"></div>
           <h3>Lakeisha Shaneisha Shannon</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/richelle.png"></div>
+          <div class="team-photo"><img src="assets/images/people/richelle-optimized.jpg"></div>
           <h3>Richelle Colin Hadiwijaya Lie</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/chloe.png"></div>
+          <div class="team-photo"><img src="assets/images/people/chloe-optimized.jpg"></div>
           <h3>Chloe Cherise Gunawan</h3>
           <p class="team-title">Anggota</p>
           <p></p>
@@ -213,55 +205,55 @@
       <br>
       <div class="container team-grid">
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/shannon.png"></div>
+          <div class="team-photo"><img src="assets/images/people/shannon-optimized.jpg"></div>
           <h3>Shannon Hope Luis</h3>
-          <p class="team-title">Co-Founder & Ketua</p>
+          <p class="team-title">Founder EcoBloom & Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/elora.png"></div>
+          <div class="team-photo"><img src="assets/images/people/elora-optimized.jpg"></div>
           <h3>Elora Jordana Gavra</h3>
-          <p class="team-title">Wakil Ketua</p>
+          <p class="team-title">Wakil Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/allyson.png"></div>
+          <div class="team-photo"><img src="assets/images/people/allyson-optimized.jpg"></div>
           <h3>Allyson Noemie Buwana</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/emily.png"></div>
+          <div class="team-photo"><img src="assets/images/people/emily-optimized.jpg"></div>
           <h3>Emily Catherine Gunawan</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/clayton.png"></div>
+          <div class="team-photo"><img src="assets/images/people/clayton-optimized.jpg"></div>
           <h3>Clayton Hazel Gwyneth</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/fae.png"></div>
+          <div class="team-photo"><img src="assets/images/people/fae-optimized.jpg"></div>
           <h3>Felomela Fae</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/felicia.png"></div>
+          <div class="team-photo"><img src="assets/images/people/felicia-optimized.jpg"></div>
           <h3>Felicia Dharmawan</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/celine.png"></div>
+          <div class="team-photo"><img src="assets/images/people/celine-optimized.jpg"></div>
           <h3>Celine Chandra</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal">
-          <div class="team-photo"><img src="assets/images/people/dawnette.png"></div>
+          <div class="team-photo"><img src="assets/images/people/dawnette-optimized.jpg"></div>
           <h3>Dawnette Concetta Surya Adiwangsa</h3>
           <p class="team-title">Anggota</p>
           <p></p>
@@ -273,50 +265,50 @@
       <br>
       <div class="container team-grid">
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/vyonne.png"></div>
+          <div class="team-photo"><img src="assets/images/people/vyonne-optimized.jpg"></div>
           <h3>Vyonne Calista Youvanka</h3>
-          <p class="team-title">Ketua</p>
+          <p class="team-title">Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/morgan.png"></div>
+          <div class="team-photo"><img src="assets/images/people/morgan-optimized.jpg"></div>
           <h3>Morgan Kei Santoso</h3>
-          <p class="team-title">Wakil Ketua</p>
+          <p class="team-title">Wakil Ketua Divisi</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/cheryl.png"></div>
+          <div class="team-photo"><img src="assets/images/people/cheryl-optimized.jpg"></div>
           <h3>Cheryl Jocelyn</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/latisha.png"></div>
+          <div class="team-photo"><img src="assets/images/people/latisha-optimized.jpg"></div>
           <h3>Latisha Daliman</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/hillary.png"></div>
+          <div class="team-photo"><img src="assets/images/people/hillary-optimized.jpg"></div>
           <h3>Hillary Zoe</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/kaylee.png"></div>
+          <div class="team-photo"><img src="assets/images/people/kaylee-optimized.jpg"></div>
           <h3>Kaylee Valyca Tandy</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
        
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/alexander.png"></div>
+          <div class="team-photo"><img src="assets/images/people/alexander-optimized.jpg"></div>
           <h3>Alexander Aprilianto</h3>
           <p class="team-title">Anggota</p>
           <p></p>
         </article>
         <article class="team-card reveal" >
-          <div class="team-photo"><img src="assets/images/people/naveen.png"></div>
+          <div class="team-photo"><img src="assets/images/people/naveen-optimized.jpg"></div>
           <h3>Naveen Raina Gloria Salim</h3>
           <p class="team-title">Anggota</p>
           <p></p>
@@ -326,10 +318,11 @@
   </main>
   <footer class="site-footer">
     <div class="footer-grid">
-      <div><h2>Eco Bloom</h2><p>Placeholder Description</p></div>
-      <div><h3>Tentang Kami</h3><div class="footer-links"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a><a href="faq.html">FAQ</a></div></div>
-      <div><h3>Kegiatan</h3><div class="footer-links"><a href="list-program.html">Program</a><a href="list-proyek.html">Proyek</a></div></div>
-      <div><h3>Hubungi Kami</h3><div class="footer-links"><a href="https://www.instagram.com/ecobloom.ig/">Instagram</a></div></div>
+      <div><h2>EcoBloom</h2><p>Blooming a <strong class="footer-tagline-accent">sustainable future</strong>.</p></div>
+      <div><h3>Tentang Kami</h3><div class="footer-links"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a></div></div>
+      <div><h3>Kegiatan</h3><div class="footer-links"><a href="list-program.html">Program</a></div></div>
+      <div><h3>Berita</h3><div class="footer-links"><a href="berita.html">Berita</a><a href="galeri.html">Galeri</a></div></div>
+      <div><h3>Hubungi Kami</h3><div class="footer-links"><a href="kontak.html">Kontak</a></div></div><div><h3>Media Sosial</h3><div class="footer-links"><a class="footer-instagram" href="https://www.instagram.com/ecobloom.ig/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2Z"/></svg></a></div></div>
     </div>
   </footer>
   <script src="assets/js/main.js"></script>

@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="ecobloom.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Bloom | Home</title>
+  <title>Beranda | EcoBloom</title>
   <meta name="description" content="Eco Bloom is an environmental sustainability organization building practical, nature-focused programs for resilient communities.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;650;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Inter:wght@400;650;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261008-mobile-cards-v2">
 </head>
-<body>
+<body class="home-page home-redesign">
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation"><a class="brand" href="index.html"><img class="brand-mark"
-          src="ecobloom.png">Eco Bloom</a><button class="hamburger" type="button"
+          src="ecobloom.png">EcoBloom</a><button class="hamburger" type="button"
         aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav-menu">
         <li><a class="nav-link" href="index.html">Beranda</a></li>
         <li class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Tentang Kami <span
               class="arrow" aria-hidden="true"></span></button>
           <div class="dropdown-menu">
-            <div class="dropdown-menu-inner"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a><a href="faq.html">FAQ</a></div>
+            <div class="dropdown-menu-inner"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a></div>
           </div>
         </li>
         <li class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false">Kegiatan<span
               class="arrow" aria-hidden="true"></span></button>
           <div class="dropdown-menu">
-            <div class="dropdown-menu-inner"><a href="list-program.html">Program</a><a href="list-proyek.html">Proyek</a>
+            <div class="dropdown-menu-inner"><a href="list-program.html">Program</a>
             </div>
           </div>
         </li>
@@ -37,82 +38,29 @@
           </div>
         </li>
         <li><a class="nav-link" href="kontak.html">Hubungi Kami</a></li>
+        <li class="nav-join"><a class="nav-join-button" href="pendaftaran.html">Bergabung</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero hero-carousel" aria-label="Sorotan EcoBloom">
-      <div class="hero-slides" aria-hidden="true">
-        <div class="hero-slide hero-slide-one is-active"></div>
-        <div class="hero-slide hero-slide-two"></div>
-        <div class="hero-slide hero-slide-three"></div>
+    <section class="bloom-hero" aria-labelledby="bloom-hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="bloom-hero-title-wrap">
+        <h1 id="bloom-hero-title">
+          <span class="hero-word hero-word-eco"><span class="title-flower title-flower-eco" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>ECO</span>
+          <span class="hero-word hero-word-bloom">BLOOM</span>
+        </h1>
+        <p class="lead bloom-hero-description">Blooming a sustainable future.</p>
       </div>
-      <div class="hero-inner">
-        <div class="hero-copy reveal">
-          <h1 class="hero-logo">EcoBloom <img src="ecobloom.png" alt="EcoBloom Logo"></h1>
-          <p><a class="button button-light" href="tentang-ecobloom.html">Selengkapnya</a></p>
-        </div>
+      <div class="bloom-hero-gallery" aria-label="Kegiatan EcoBloom">
+        <figure class="hero-photo hero-photo-one"><img src="assets/images/Hero-index-html.jpeg"></figure>
+        <figure class="hero-photo hero-photo-two"><img src="assets/images/Hero2-index-html.jpeg"></figure>
+        <figure class="hero-photo hero-photo-three"><img src="assets/images/Hero3-index-html.jpeg"></figure>
       </div>
-      <div class="hero-carousel-controls" aria-label="Kontrol gambar">
-        <button class="hero-carousel-button hero-carousel-previous" type="button" aria-label="Gambar sebelumnya">&#8592;</button>
-        <button class="hero-carousel-button hero-carousel-next" type="button" aria-label="Gambar berikutnya">&#8594;</button>
-      </div>
-      <div class="hero-carousel-dots" role="group" aria-label="Pilih gambar hero">
-        <button class="hero-carousel-dot is-active" type="button" aria-label="Tampilkan gambar 1" aria-current="true"></button>
-        <button class="hero-carousel-dot" type="button" aria-label="Tampilkan gambar 2" aria-current="false"></button>
-        <button class="hero-carousel-dot" type="button" aria-label="Tampilkan gambar 3" aria-current="false"></button>
-      </div>
-    </section>
-
-    <section class="section bg-cream">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <h2>Program Unggulan</h2>
-            <br>
-            <p class="lead">Beragam inisiatif yang <b class="description">menghubungkan edukasi, kolaborasi, dan aksi nyata</b> demi lingkungan yang lebih lestari.</p>
-          </div>
-          <p><a class="button" href="berita.html">Lihat Semua</a></p>
-        </div>
-        <div class="grid-3 home-hover-cards">
-          <article class="feature-card reveal">
-            <img src="assets/images/grid-placeholder.png">
-            <div class="card-body">
-              <h3>Bootcamp Edukasi Lingkungan</h3>
-              <p>...merupakan pelatihan intensif yang diselenggarakan secara langsung di sekolah-sekolah pedesaan.</p>
-              <a class="button" href="/programs/bootcamp.html">Selengkapnya</a>
-            </div>
-          </article>
-          <article class="feature-card reveal">
-            <img src="assets/images/grid-placeholder.png">
-            <div class="card-body">
-              <h3>Stasiun Kompos Sekolah</h3>
-              <p>Program ini dirancang untuk mengurangi jumlah sampah organik yang berakhir di Tempat Pembuangan Akhir...</p>
-              <a class="button" href="impact-project.html">Selengkapnya</a>
-            </div>
-          </article>
-          <article class="feature-card reveal">
-            <img src="assets/images/grid-placeholder.png">
-            <div class="card-body">
-              <h3>Sampah Jadi Karya</h3>
-              <p>...merupakan program insentif yang mengajak siswa untuk berpartisipasi secara langsung dalam pengumpulan dan pemanfaatan kembali sampah.</p>
-              <a class="button" href="impact-project.html">Selengkapnya</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-forest">
-      <div class="container split">
-        <div class="split-image image-reveal">
-          <img src="assets/images/surat pembuka.jpg">
-        </div>
-        <div class="split-copy reveal">
-          <h2 style="color: var(--white);">Surat Pembuka</h2>
-          <p style="color: var(--white);">{Surat}</b></p>
-        </div>
+      <div class="bloom-hero-bottom">
+        <p></p>
+        <a class="bloom-round-link" href="tentang-ecobloom.html">Apa<br> EcoBloom? <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
@@ -126,31 +74,77 @@
         </div>
         <div class="grid-3 home-hover-cards">
           <article class="feature-card reveal">
-            <img src="assets/images/grid-placeholder.png">
-            <div class="card-body"><span class="meta">DATE</span><h3>Main Title</h3><p>Short Description</p><a class="button" href="impact-news.html">Selengkapnya</a></div>
+            <img src="assets/images/PictureTeamEcoBloom-optimized.jpg">
+            <div class="card-body"><span class="meta">15/08/2026</span><h3>Photoshoot Pertama EcoBloom</h3><p>Momen pertama hampir seluruh tim EcoBloom bertemu secara langsung, membangun kebersamaan, dan menjalani photoshoot bersama sebelum mengadakan pertemuan resmi.</p><a class="button" href="berita/photoshoot-pertama.html">Selengkapnya</a></div>
+            <button class="mobile-news-card-toggle" type="button" aria-label="Tampilkan detail berita" aria-expanded="false"></button>
           </article>
           <article class="feature-card reveal">
-            <img src="assets/images/grid-placeholder.png">
-            <div class="card-body"><span class="meta">DATE</span><h3>Main Title</h3><p>Short Description</p><a class="button" href="impact-news.html">Selengkapnya</a></div>
+            <img src="assets/images/sdn2sudimampir/MoU-signing-optimized.jpg">
+            <div class="card-body"><span class="meta">02/09/2026</span><h3>Penandatangan MoU: SDN 2 Sudimampir</h3><p>Penandatanganan MoU dengan SDN 2 Sudimampir menjadi salah satu langkah awal EcoBloom dalam membuka kesempatan untuk mengadakan bootcamp di sekolah.</p><a class="button" href="berita/petandatangan-MoU-sdn2sudimampir.html">Selengkapnya</a></div>
+            <button class="mobile-news-card-toggle" type="button" aria-label="Tampilkan detail berita" aria-expanded="false"></button>
           </article>
           <article class="feature-card reveal">
-            <img src="assets/images/grid-placeholder.png">
-            <div class="card-body"><span class="meta">DATE</span><h3>Main Title</h3><p>Short Description</p><a class="button" href="impact-news.html">Selengkapnya</a></div>
+            <img src="assets/images/sdn2sudimampir/Screenshot 2026-10-05 201226-optimized.jpg">
+            <div class="card-body"><span class="meta">25/09/2026</span><h3>Bootcamp Pertama EcoBloom: SDN 2 Sudimampir</h3><p>Kegiatan edukasi lingkungan bersama lebih dari 50 siswa SDN 2 Sudimampir melalui materi, quiz interaktif, dan praktik memilah sampah secara langsung.</p><a class="button" href="berita/bootcamp-sdn2sudimampir.html">Selengkapnya</a></div>
+            <button class="mobile-news-card-toggle" type="button" aria-label="Tampilkan detail berita" aria-expanded="false"></button>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="quote-band">
-      <div class="container reveal">
-        <div>
-          <h2>Testimoni</h2>
+    <section class="section bg-forest opening-letter">
+      <div class="container split">
+        <div class="split-image image-reveal">
+          <img src="assets/images/surat pembuka-optimized.jpg">
         </div>
-        <p class="lead"></p>
+        <div class="split-copy letter-copy reveal">
+          <h2 class="letter-title">Surat Pembuka</h2>
+          <h3 class="letter-by"><u>Kayson Reinard, Founder</u></h3>
+          <p class="letter-text">Indonesia sering kali dipuja-puja di panggung internasional sebagai surga tropis yang kaya raya; sebuah zamrud khatulistiwa dengan hutan hujan lebat, dan lautan luas yang memukau mata wisatawan asing. Namun, balikkan lembaran brosur pariwisata yang indah itu, dan Anda akan langsung menghadap kenyataan yang jauh lebih kelam.</p>
+          <p class="letter-text">Hanya 10 menit dari rumah saya di Kota Baru Parahyangan (KBP), Jawa Barat, mengalir sebuah tragedi ekologis yang menyayat hati: Sungai Citarum, yang pernah dinobatkan sebagai sungai paling tercemar di muka bumi. Di sinilah mitos "Indonesia yang keren dan asri" runtuh seketika di hadapan tumpukan sampah plastik yang menggunung, air pekat berbau busuk, dan limbah industri Nusantara yang dibiarkan meracuni kehidupan jutaan warga lokal. Lebih dari 15 ribu ton sampah mencemari aliran sungai di jantung tanah air ini setiap harinya.Kedekatan krisis ini dengan kehidupan kita sehari-hari adalah sebuah tamparan keras. Setelah mendatangi daerah pedesaan di sekitar aliran sungai, kami menemukan bukti nyata di lapangan: di balik retorika pembangunan dan slogan hijau, ada kesenjangan edukasi serta literasi keberlanjutan yang diabaikan begitu saja oleh sistem.</p>
+          <p class="letter-text">Dari reruntuhan harapan inilah EcoBloom lahir, sebagai perlawanan dari anak-anak muda yang menolak tinggal diam. Di tengah kehancuran ekologis yang terpampang nyata di depan mata, generasi muda bukan sekadar penonton, melainkan garda terdepan yang menuntut perubahan. Saya bersama seluruh jajaran Tim Eksekutif dan Dewan Direksi mengapresiasi keberanian kalian yang memilih turun tangan. Namun, perjuangan ini tidak boleh berhenti pada seremoni atau program kerja semata. Kontribusi terbaik kita untuk bumi bukanlah sekadar mengikuti kegiatan EcoBloom, melainkan merombak total gaya hidup kita sehari-hari hingga menjadi cerminan nyata dari kepedulian itu.</p>
+          <p class="letter-quote"> <b>"We are the first generation to feel the sting of climate change, and we are the last generation that can do something about it."</b> <br>- Jay Inslee</p>
+        </div>
       </div>
     </section>
 
-    <section class="section bg-sage">
+    <section class="hero hero-carousel" aria-label="Sorotan EcoBloom">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide hero-slide-one is-active"></div>
+        <div class="hero-slide hero-slide-two"></div>
+        <!-- <div class="hero-slide hero-slide-three"></div> -->
+      </div>
+      <div class="hero-inner">
+        <article class="testimonial-card hero-testimonial-card reveal">
+          <div class="testimonial-panel is-active">
+            <span class="testimonial-number">01</span>
+            <blockquote>“Bagi saya kegiatan ini sangat bermanfaat dan mengedukasi terkhusus bagi murid kelas 4, 5 dan 6 SDN 2 Sudimampir. Dalam kegiatannya EcoBloom menyampaikan materi dengan metode Gamifikasi Pembelajaran, games yang menarik membuat murid bisa menerima materi dengan rasa senang dan memahami dengan cepat. ”</blockquote>
+            <p class="testimonial-attribution">- Rusli Permana · Guru PAIBP, SDN 2 Sudimampir</p>
+          </div>
+          <div class="testimonial-panel">
+            <span class="testimonial-number">02</span>
+            <blockquote>“...buat bootcamp ecobloom waktu itu seru banget!! jujur awalnya aku kira semua sampah itu sama aja dan langsung buang, tapi setelah ikut bootcamp aku jadi paham bedanya sampah organik, anorganik, dan b3... games nya juga seru banget, pas disuruh nebak jenis sampahnya masuk ke organik, anorganik, atau b3; kaka kaka nya juga jelasin materi nya dengan bahasa yang gampang dimengerti.”</blockquote>
+            <p class="testimonial-attribution">- El · Murid, SDN 2 Sudimampir</p>
+          </div>
+          <div class="testimonial-panel">
+            <span class="testimonial-number">03</span>
+            <blockquote>“Testimoni 3 wow ecobloom is so cool they went to my school school is cool”</blockquote>
+            <p class="testimonial-attribution">Nama pemberi testimoni · Peran / organisasi</p>
+          </div> 
+        </article>
+      </div>
+      <div class="hero-carousel-controls" aria-label="Kontrol gambar">
+        <button class="hero-carousel-button hero-carousel-previous" type="button" aria-label="Gambar sebelumnya">&#8592;</button>
+        <button class="hero-carousel-button hero-carousel-next" type="button" aria-label="Gambar berikutnya">&#8594;</button>
+      </div>
+      <div class="hero-carousel-dots" role="group" aria-label="Pilih gambar hero">
+        <button class="hero-carousel-dot is-active" type="button" aria-label="Tampilkan gambar 1" aria-current="true"></button>
+        <button class="hero-carousel-dot" type="button" aria-label="Tampilkan gambar 2" aria-current="false"></button>
+        <!-- <button class="hero-carousel-dot" type="button" aria-label="Tampilkan gambar 3" aria-current="false"></button>  -->
+      </div>
+    </section>
+
+    <section class="section bg-sage home-contact-cta">
       <div class="container split reverse">
         <div class="split-copy reveal">
           <h2>Punya pertanyaan, ide, atau ingin berkolaborasi?</h2>
@@ -158,20 +152,20 @@
           <p><a class="button" href="kontak.html">Hunbungi Kami</a></p>
         </div>
         <div class="split-image image-reveal">
-          <img src="assets/images/grid-placeholder.png">
+          <img src="assets/images/people/emelie-and-jill-optimized.jpg">
         </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="footer-grid">
-      <div><h2>Eco Bloom</h2><p>Placeholder Description</p></div>
-      <div><h3>Tentang Kami</h3><div class="footer-links"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a><a href="faq.html">FAQ</a></div></div>
-      <div><h3>Kegiatan</h3><div class="footer-links"><a href="list-program.html">Program</a><a href="list-proyek.html">Proyek</a></div></div>
-      <div><h3>Hubungi Kami</h3><div class="footer-links"><a href="https://www.instagram.com/ecobloom.ig/">Instagram</a></div></div>
+      <div><h2>EcoBloom</h2><p>Blooming a <strong class="footer-tagline-accent">sustainable future</strong>.</p></div>
+      <div><h3>Tentang Kami</h3><div class="footer-links"><a href="tentang-ecobloom.html">Siapa Kami?</a><a href="tim.html">Tim Kami</a></div></div>
+      <div><h3>Kegiatan</h3><div class="footer-links"><a href="list-program.html">Program</a></div></div>
+      <div><h3>Berita</h3><div class="footer-links"><a href="berita.html">Berita</a><a href="galeri.html">Galeri</a></div></div>
+      <div><h3>Hubungi Kami</h3><div class="footer-links"><a href="kontak.html">Kontak</a></div></div><div><h3>Media Sosial</h3><div class="footer-links"><a class="footer-instagram" href="https://www.instagram.com/ecobloom.ig/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2Z"/></svg></a></div></div>
     </div>
   </footer>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20261008-mobile-cards-v2"></script>
 </body>
 </html>
